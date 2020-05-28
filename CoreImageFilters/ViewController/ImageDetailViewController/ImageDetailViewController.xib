@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageDetailViewController" customModule="CoreImageFilters" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="zet-gn-drw" id="Bmt-0z-o4t"/>
+                <outlet property="picker" destination="x03-BN-PkS" id="Fg1-Ep-5Kn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zet-gn-drw">
+                    <rect key="frame" x="0.0" y="64" width="414" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zet-gn-drw" secondAttribute="height" multiplier="1:1" id="h2h-AX-Xw1"/>
+                    </constraints>
+                </imageView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x03-BN-PkS">
+                    <rect key="frame" x="0.0" y="498" width="414" height="364"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zet-gn-drw" secondAttribute="trailing" id="0sg-9g-clc"/>
+                <constraint firstItem="x03-BN-PkS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1k6-Aj-L1G"/>
+                <constraint firstItem="x03-BN-PkS" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="IFc-C0-Gdi"/>
+                <constraint firstItem="x03-BN-PkS" firstAttribute="top" secondItem="zet-gn-drw" secondAttribute="bottom" constant="20" id="RiX-91-MsJ"/>
+                <constraint firstItem="x03-BN-PkS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bR9-YD-hXf"/>
+                <constraint firstItem="zet-gn-drw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o0y-HL-h4H"/>
+                <constraint firstItem="zet-gn-drw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="zgQ-Mc-hQy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+</document>
